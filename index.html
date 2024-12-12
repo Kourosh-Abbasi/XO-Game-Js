@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="xo-icon.png">
+</head>
+<body>
+<div id="score-table-div">
+    <table id="score-table">
+        <thead>
+        <tr>
+            <th class="td">Player</th>
+            <th class="td">Turn</th>
+            <th class="td">Winner</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="td" id="player-1-name">X</td>
+            <td class="td" id="player-1-turn">-</td>
+            <td class="td" id="player-1-win">-</td>
+        </tr>
+        <tr>
+            <td class="td" id="player-2-name">O</td>
+            <td class="td" id="player-2-turn">-</td>
+            <td class="td" id="player-2-win">-</td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="buttons-div">
+        <div class="buttons" id="start-btn" onclick="start_game()">Start the game</div>
+        <div class="buttons" id="reset-btn" onclick="reset_game()">Reset the game</div>
+    </div>
+
+</div>
+<div id="game-table-div">
+    <div class="game-table-rows" id="row-1">
+        <div class="cells" id="cell-11" onclick="insert_play('cell-11')"></div>
+        <div class="cells" id="cell-12" onclick="insert_play('cell-12')"></div>
+        <div class="cells" id="cell-13" onclick="insert_play('cell-13')"></div>
+    </div>
+    <div class="game-table-rows" id="row-2">
+        <div class="cells" id="cell-21" onclick="insert_play('cell-21')"></div>
+        <div class="cells" id="cell-22" onclick="insert_play('cell-22')"></div>
+        <div class="cells" id="cell-23" onclick="insert_play('cell-23')"></div>
+    </div>
+    <div class="game-table-rows" id="row-3">
+        <div class="cells" id="cell-31" onclick="insert_play('cell-31')"></div>
+        <div class="cells" id="cell-32" onclick="insert_play('cell-32')"></div>
+        <div class="cells" id="cell-33" onclick="insert_play('cell-33')"></div>
+    </div>
+</div>
+
+<script src="logic.js"></script>
+</body>
+</html>
